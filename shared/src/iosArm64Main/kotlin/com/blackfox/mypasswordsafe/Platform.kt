@@ -1,5 +1,6 @@
 package com.blackfox.mypasswordsafe
 
 actual class Platform actual constructor() {
-    actual val name: String = "Android ${android.os.Build.VERSION.SDK_INT}"
+    actual val name: String
+        get() = TODO("Not yet implemented")
 }

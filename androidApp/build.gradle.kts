@@ -33,6 +33,7 @@ android {
 
 dependencies {
     implementation(project(":shared"))
+    implementation("androidx.compose.runtime:runtime:1.3.3")
     implementation("androidx.compose.ui:ui:1.3.3")
     implementation("androidx.compose.ui:ui-tooling:1.3.3")
     implementation("androidx.compose.ui:ui-tooling-preview:1.3.3")
@@ -43,4 +44,8 @@ dependencies {
     implementation("androidx.activity:activity-compose:1.6.1")
     implementation("androidx.navigation:navigation-compose:2.6.0-alpha04")
     implementation("androidx.compose.material3:material3:1.0.1")
+    implementation("io.insert-koin:koin-android:3.3.2")
+    implementation("io.insert-koin:koin-androidx-compose:3.4.1")
+    implementation("net.zetetic:sqlcipher-android:4.5.3@aar")
+    implementation("androidx.sqlite:sqlite:2.3.0")
 }
