@@ -13,13 +13,13 @@ import com.blackfox.mypasswordsafe.Platform
 import com.blackfox.mypasswordsafe.android.GreetPresenter
 import com.blackfox.mypasswordsafe.android.MpsViewModel
 import com.blackfox.mypasswordsafe.android.R
-
+import com.blackfox.mypasswordsafe.android.di.repository.*
+import org.koin.androidx.compose.get
 @Composable
 fun HomeScreen() {
-    //val viewModel: MpsViewModel by koinViewModel()
-    val viewModel = MpsViewModel()
-    //val presenter: GreetPresenter by get()
-    val presenter = GreetPresenter(greeting = Greeting(Platform()))
+    //val viewModel: MpsViewModel by koinViewModel(get(), get(), get())
+    val viewModel = MpsViewModel(UserRepositoryImpl(), VaultRepositoryImpl(), AccountRepositoryImpl())
+    val presenter: GreetPresenter by get<GreetPresenter>()
     Box(
         contentAlignment = Alignment.Center,
         modifier = Modifier.fillMaxSize()

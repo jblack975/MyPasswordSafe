@@ -9,5 +9,5 @@ import org.koin.dsl.module
 
 val androidModule = module {
     singleOf(::GreetPresenter)
-    viewModel { MpsViewModel() }
+    viewModel { MpsViewModel(get(), get(), get()) }
 }
