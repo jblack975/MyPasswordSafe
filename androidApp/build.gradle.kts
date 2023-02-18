@@ -47,5 +47,6 @@ dependencies {
     implementation("io.insert-koin:koin-android:3.3.2")
     implementation("io.insert-koin:koin-androidx-compose:3.4.1")
     implementation("net.zetetic:sqlcipher-android:4.5.3@aar")
-    implementation("androidx.sqlite:sqlite:2.3.0")
+    implementation("androidx.sqlite:sqlite:2.2.0")
+    implementation("com.squareup.sqldelight:android-driver:1.5.3")
 }

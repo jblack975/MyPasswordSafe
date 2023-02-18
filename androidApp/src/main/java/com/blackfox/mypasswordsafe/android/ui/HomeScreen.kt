@@ -18,7 +18,7 @@ import org.koin.androidx.compose.get
 @Composable
 fun HomeScreen() {
     //val viewModel: MpsViewModel by koinViewModel(get(), get(), get())
-    val viewModel = MpsViewModel(UserRepositoryImpl(), VaultRepositoryImpl(), AccountRepositoryImpl())
+    val viewModel = MpsViewModel()
     val presenter: GreetPresenter by get<GreetPresenter>()
     Box(
         contentAlignment = Alignment.Center,

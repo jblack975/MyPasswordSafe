@@ -7,7 +7,4 @@ import org.koin.dsl.module
 
 val commonModule = module {
     singleOf(::Greeting)
-    single<UserRepository> { UserRepositoryImpl() }
-    single<AccountRepository> { AccountRepositoryImpl() }
-    single<VaultRepository> { VaultRepositoryImpl() }
 }
